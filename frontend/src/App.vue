@@ -4,7 +4,9 @@
     
     <!-- router 설정 -->
     <router-view></router-view>
-
+    <div>
+      <LoginView/>
+    </div>
     <!-- Footer -->
     <div class="setting-footer">
       <FooterView />
@@ -15,11 +17,13 @@
 
 <script>
 import FooterView from '@/components/common/FooterView.vue'
+import LoginView from '@/views/member/LoginView.vue'
 
 export default {
   name: 'App',
   components: {
-    FooterView
+    FooterView,
+    LoginView,
   }
 }
 </script>
